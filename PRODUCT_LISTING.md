@@ -1,5 +1,9 @@
 # Gumroad / Ko-fi Product Listing Template
 
+## Live Listing
+- **Ko-fi Product URL**: [https://ko-fi.com/s/d516f950ec](https://ko-fi.com/s/d516f950ec)
+- **Ko-fi Shop**: [https://ko-fi.com/dimiboy/shop](https://ko-fi.com/dimiboy/shop)
+
 ## Product Title
 **1-Click Production Telegram Server Sentinel & Uptime Stack (Turnkey Docker + Python Kit)**
 
