@@ -1,0 +1,30 @@
+# Telegram Sentinel Alert Configuration
+
+server:
+  name: "HomeLab-Primary"
+  environment: "production"
+
+monitoring:
+  # Disk mount points to watch
+  disks:
+    - "/"
+    - "/data"
+  
+  # Network check targets (Google DNS, Cloudflare, local gateway)
+  ping_targets:
+    - "1.1.1.1"
+    - "8.8.8.8"
+
+  # Process / container crash detection
+  critical_processes:
+    - "docker"
+    - "sshd"
+
+alert_rules:
+  notify_on_boot: true
+  notify_on_ip_change: true
+  quiet_hours:
+    enabled: false
+    start: "23:00"
+    end: "07:00"
+    allow_critical: true

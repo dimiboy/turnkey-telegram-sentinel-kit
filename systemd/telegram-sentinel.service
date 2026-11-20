@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram Sentinel Server Health Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/telegram-sentinel
+EnvironmentFile=/opt/telegram-sentinel/.env
+ExecStart=/usr/bin/python3 /opt/telegram-sentinel/sentinel_daemon.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
