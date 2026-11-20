@@ -1,0 +1,10 @@
+﻿*.png
+!cover.png
+*.py
+!sentinel.py
+*.log
+*.html
+*.json
+!package.json
+.env
+__pycache__/
